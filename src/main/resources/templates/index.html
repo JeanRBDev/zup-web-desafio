@@ -1,0 +1,17 @@
+<html>
+
+	<body>
+		<h1>Lista de usuários</a></h1>
+		<h3><a href="/cadastrar-usuario">Cadastrar Usuário</a></h3>
+	
+		<div th:each="usuario : ${usuarios}">
+			<div class="row">
+				<p><span th:text="${usuario.nome}"></span></p>
+				<p><span th:text="${usuario.email}"></span></p>
+				<p><span th:text="${usuario.cpf}"></span></p>
+				<p><span th:text="${usuario.dataNascimento}"></span></p>
+			</div>
+		</div> 
+	</body>
+
+</html>
